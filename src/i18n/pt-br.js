@@ -18,19 +18,19 @@ export default {
         'Não foi possível acessar o servidor. Por favor verifique sua conexão e tente novamente.',
       'lock.popup_closed': 'Popup fechada. Tente novamente.',
       'lock.unauthorized': 'Permissões não foram concedidas. Tente novamente.',
+      'lock.mfa_registration_required':
+        'Autenticação por vários fatores é necessária, mas o dispositivo não está inscrito. Por favor, o inscreva antes de prosseguir.',
+      'lock.mfa_invalid_code': 'Código errado. Por favor, tente novamente.',
       password_change_required:
         'Você precisa atualizar sua senha porque é seu primeiro login, ou porque sua senha expirou.',
       password_leaked:
         'Esse login está bloqueado porque sua senha foi vazada em outro website. Nós lhe enviamos um email com instruções sobre como desbloqueá-lo.',
       too_many_attempts: 'A sua conta foi bloqueada após várias tentativas de login consecutivas.',
-      'lock.mfa_registration_required':
-        'Autenticação por vários fatores é necessária, mas o dispositivo não está inscrito. Por favor, o inscreva antes de prosseguir.',
-      'lock.mfa_invalid_code': 'Código errado. Por favor, tente novamente.',
+      too_many_requests:
+        'Sentimos muito, mas existem muitos acessos agora. Por favor, recarregue a página e tente novamente. Se isso persistir, tente novamente mais tarde.',
       session_missing:
         'Não foi possível concluir o seu pedido de autenticação. Por favor tente novamente depois de fechar todos os diálogos abertos',
-      'hrd.not_matching_email': 'Por favor, use seu email corporativo para acessar.',
-      too_many_requests:
-        'Sentimos muito, mas existem muitos acessos agora. Por favor, recarregue a página e tente novamente. Se isso persistir, tente novamente mais tarde.'
+      'hrd.not_matching_email': 'Por favor, use seu email corporativo para acessar.'
     },
     passwordless: {
       'bad.email': 'O email é inválido',
@@ -44,7 +44,9 @@ export default {
       password_no_user_info_error: 'A senha é baseado em informações do usuário.',
       password_strength_error: 'A senha é muito fraca.',
       user_exists: 'O usuário já existe.',
-      username_exists: 'O nome de usuário já existe.'
+      username_exists: 'O nome de usuário já existe.',
+      social_signup_needs_terms_acception:
+        'Por favor, concorde com os Termos de Serviço abaixo para continuar.'
     }
   },
   success: {
@@ -54,6 +56,8 @@ export default {
     signUp: 'Obrigado por se inscrever.'
   },
   blankErrorHint: 'Não pode estar em branco',
+  captchaCodeInputPlaceholder: 'Digite o código exibido acima',
+  captchaMathInputPlaceholder: 'Resolva a fórmula exibida acima',
   codeInputPlaceholder: 'seu código',
   databaseEnterpriseLoginInstructions: '',
   databaseEnterpriseAlternativeLoginInstructions: 'ou',
@@ -63,6 +67,7 @@ export default {
   enterpriseLoginIntructions: 'Entre com suas credenciais corporativas.',
   enterpriseActiveLoginInstructions: 'Por favor entre com suas credenciais corporativas em %s.',
   failedLabel: 'Falha!',
+  forgotPasswordTitle: 'Redefinir sua senha',
   forgotPasswordAction: 'Esqueceu sua senha?',
   forgotPasswordInstructions:
     'Por favor digite seu endereço de email. Enviaremos um email para redefinir sua senha.',
@@ -100,8 +105,12 @@ export default {
   resendingLabel: 'Reenviando...',
   retryLabel: 'Tentar novamente',
   sentLabel: 'Enviado!',
+  showPassword: 'Mostrar senha',
+  signUpTitle: 'Inscrever-se',
   signUpLabel: 'Inscrever',
   signUpSubmitLabel: 'Inscrever',
+  signUpTerms:
+    'Ao se inscrever, você concorda com nossos termos de serviço e política de privacidade.',
   signUpWithLabel: 'Inscreva-se com %s',
   socialLoginInstructions: '',
   socialSignUpInstructions: '',
@@ -116,14 +125,9 @@ export default {
   welcome: 'Bem-vindo %s!',
   windowsAuthInstructions: 'Você está conectado da sua rede corporativa&hellip;',
   windowsAuthLabel: 'Autenticação Windows',
-  forgotPasswordTitle: 'Redefinir sua senha',
-  signUpTitle: 'Inscrever-se',
   mfaInputPlaceholder: 'Código',
   mfaLoginTitle: 'Verificação 2-Step',
   mfaLoginInstructions: 'Digite o código de verificação gerado pela sua aplicação móvel.',
   mfaSubmitLabel: 'Entrar',
-  mfaCodeErrorHint: 'Use números %d',
-  showPassword: 'Mostrar senha',
-  signUpTerms:
-    'Ao se inscrever, você concorda com nossos termos de serviço e política de privacidade.'
+  mfaCodeErrorHint: 'Use números %d'
 };

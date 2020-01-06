@@ -1,6 +1,3 @@
-// This file was automatically translated.
-// Feel free to submit a PR if you find a more accurate translation.
-
 export default {
   error: {
     forgotPassword: {
@@ -23,21 +20,21 @@ export default {
         'Нет доступа к серверу. Пожалуйста, проверьте подключение и повторите попытку.',
       'lock.popup_closed': 'Всплывающее окно закрыто, попробуйте еще раз.',
       'lock.unauthorized': 'Недостаточно полномочий, попробуйте еще раз.',
+      'lock.mfa_registration_required':
+        'Требуется многофакторная аутентификация, но устройство не зарегистрировано. Пожалуйста, зарегистрируйте его, прежде чем двигаться дальше.',
+      'lock.mfa_invalid_code': 'Неверный код. Пожалуйста, попробуйте еще раз.',
       password_change_required:
         'Необходимо обновить пароль, так как Вы совершаете вход в первый раз, или срок действия пароля истек.',
       password_leaked:
         'Эта учетная запись была заблокирована, так как произошла утечка Вашего пароля на другом веб-сайте. На Ваш электронный адрес отправлена инструкция по восстановлению учетной записи.',
       too_many_attempts:
         'Ваш аккаунт был заблокирован после нескольких последовательных попыток входа в систему.',
-      'lock.mfa_registration_required':
-        'Требуется многофакторная аутентификация, но устройство не зарегистрировано. Пожалуйста, зарегистрируйте его, прежде чем двигаться дальше.',
-      'lock.mfa_invalid_code': 'Неверный код. Пожалуйста, попробуйте еще раз.',
+      too_many_requests:
+        'Мы сожалеем. Сейчас слишком много запросов. Пожалуйста, обновите страницу и попробуйте еще раз. Если это не помогло, повторите попытку позже.',
       session_missing:
         'Не удалось выполнить запрос аутентификации. Пожалуйста, попробуйте еще раз после закрытия всех открытых диалоговых окон',
       'hrd.not_matching_email':
-        'Пожалуйста, используйте вашу корпоративную электронную почту для входа.',
-      too_many_requests:
-        'Мы сожалеем. Сейчас слишком много запросов. Пожалуйста, обновите страницу и попробуйте еще раз. Если это не помогло, повторите попытку позже.'
+        'Пожалуйста, используйте вашу корпоративную электронную почту для входа.'
     },
     passwordless: {
       'bad.email': 'Недействительный адрес электронной почты',
@@ -52,7 +49,9 @@ export default {
       password_no_user_info_error: 'Пароль содержит информацию о пользователе.',
       password_strength_error: 'Пароль слишком слабый.',
       user_exists: 'Пользователь уже существует.',
-      username_exists: 'Имя пользователя уже существует.'
+      username_exists: 'Имя пользователя уже существует.',
+      social_signup_needs_terms_acception:
+        'Пожалуйста, согласитесь на Условия предоставления услуг ниже чтобы продолжить.'
     }
   },
   success: {
@@ -62,6 +61,8 @@ export default {
     signUp: 'Спасибо, что зарегистрировались.'
   },
   blankErrorHint: 'Поле не может быть пустым',
+  captchaCodeInputPlaceholder: 'Enter the code shown above',
+  captchaMathInputPlaceholder: 'Solve the formula shown above',
   codeInputPlaceholder: 'Ваш код',
   databaseEnterpriseLoginInstructions: '',
   databaseEnterpriseAlternativeLoginInstructions: 'или',
@@ -73,6 +74,7 @@ export default {
   enterpriseActiveLoginInstructions:
     'Пожалуйста, введите Ваши корпоративные учетные данные по ссылке %s.',
   failedLabel: 'Не удалось совершить действие!',
+  forgotPasswordTitle: 'Сбросить пароль',
   forgotPasswordAction: 'Не помните пароль?',
   forgotPasswordInstructions:
     'Пожалуйста, введите Ваш адрес электронной почты. Мы отправим Вам сообщение для восстановления пароля.',
@@ -111,8 +113,12 @@ export default {
   resendingLabel: 'Повторная отправка...',
   retryLabel: 'Повторить попытку',
   sentLabel: 'Отправлено!',
+  showPassword: 'Показать пароль',
+  signUpTitle: 'Зарегистрироваться',
   signUpLabel: 'Регистрация',
   signUpSubmitLabel: 'Зарегистрироваться',
+  signUpTerms:
+    'Зарегистрировавшись, вы соглашаетесь с нашими условиями обслуживания и политикой конфиденциальности.',
   signUpWithLabel: 'Зарегистрироваться через %s',
   socialLoginInstructions: '',
   socialSignUpInstructions: '',
@@ -127,15 +133,10 @@ export default {
   welcome: 'Добро пожаловать, %s!',
   windowsAuthInstructions: 'Вы подключены через корпоративную сеть&hellip;',
   windowsAuthLabel: 'Аутентификация Windows',
-  forgotPasswordTitle: 'Сбросить пароль',
-  signUpTitle: 'Зарегистрироваться',
   mfaInputPlaceholder: 'Код',
   mfaLoginTitle: '2-аутентификация',
   mfaLoginInstructions:
     'Пожалуйста, введите проверочный код, сгенерированный мобильным приложением.',
   mfaSubmitLabel: 'Авторизоваться',
-  mfaCodeErrorHint: 'Используйте %d номера',
-  showPassword: 'Показать пароль',
-  signUpTerms:
-    'Зарегистрировавшись, вы соглашаетесь с нашими условиями обслуживания и политикой конфиденциальности.'
+  mfaCodeErrorHint: 'Используйте %d номера'
 };

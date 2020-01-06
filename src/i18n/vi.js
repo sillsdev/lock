@@ -46,7 +46,8 @@ export default {
       password_no_user_info_error: 'Mật khẩu giống thông tin cá nhân.',
       password_strength_error: 'Mật khẩu quá yếu.',
       user_exists: 'Tài khoản đã có người sử dụng.',
-      username_exists: 'Tài khoản đã có người sử dụng.'
+      username_exists: 'Tài khoản đã có người sử dụng.',
+      social_signup_needs_terms_acception: 'Please agree to the Terms of Service below to continue.'
     }
   },
   success: {
@@ -56,6 +57,8 @@ export default {
     signUp: 'Đăng ký thành công.'
   },
   blankErrorHint: 'Không được để trống',
+  captchaCodeInputPlaceholder: 'Enter the code shown above',
+  captchaMathInputPlaceholder: 'Solve the formula shown above',
   codeInputPlaceholder: 'Mã số của bạn',
   databaseEnterpriseLoginInstructions: '',
   databaseEnterpriseAlternativeLoginInstructions: 'hoặc',

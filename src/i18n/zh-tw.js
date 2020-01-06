@@ -39,7 +39,8 @@ export default {
       password_no_user_info_error: '密碼中出現帳號訊息。',
       password_strength_error: '密碼太簡單。',
       user_exists: '該使用者已存在。',
-      username_exists: '該帳號已存在。'
+      username_exists: '該帳號已存在。',
+      social_signup_needs_terms_acception: 'Please agree to the Terms of Service below to continue.'
     }
   },
   success: {
@@ -49,6 +50,8 @@ export default {
     signUp: '感謝您的註冊。'
   },
   blankErrorHint: '不能是空白',
+  captchaCodeInputPlaceholder: 'Enter the code shown above',
+  captchaMathInputPlaceholder: 'Solve the formula shown above',
   codeInputPlaceholder: '您的代碼',
   databaseEnterpriseLoginInstructions: '',
   databaseEnterpriseAlternativeLoginInstructions: '或',

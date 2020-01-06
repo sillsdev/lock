@@ -6,7 +6,8 @@ export default {
     forgotPassword: {
       too_many_requests: '您尝试登录次数过多 请稍后再试。',
       'lock.fallback': '对不起，请求修改密码时出现错误。',
-      enterprise_email: '您的电子邮件域名是企业身份提供者的一部分。要重置您的密码，请联系您的安全管理员。'
+      enterprise_email:
+        '您的电子邮件域名是企业身份提供者的一部分。要重置您的密码，请联系您的安全管理员。'
     },
     login: {
       blocked_user: '该账号已被锁定。',
@@ -18,14 +19,16 @@ export default {
       'lock.network': '无法连接到服务器，请检查网络连接后重试。',
       'lock.popup_closed': '弹出窗口被关闭，请重试',
       'lock.unauthorized': '权限不足，请重试。',
+      'lock.mfa_registration_required':
+        '多因素认证是必需的，但没有登记您的设备。在移动之前，请报名参加吧。',
+      'lock.mfa_invalid_code': '错误代码。请再试一次。',
       password_change_required: '由于这是第一次登录或者您的密码已过期，请更新密码。',
       password_leaked: '由于您的密码在其他网站已泄露，该账户已被锁定，请查看邮件解除锁定。',
       too_many_attempts: '由于登录操作太频繁，您的帐号已被锁定。',
-      'lock.mfa_registration_required': '多因素认证是必需的，但没有登记您的设备。在移动之前，请报名参加吧。',
-      'lock.mfa_invalid_code': '错误代码。请再试一次。',
+      too_many_requests:
+        '我们很抱歉。现在请求太多了。请刷新页面，然后再试一次。如果仍然存在，请稍后再试。',
       session_missing: '无法完成身份验证请求。请关闭所有打开的对话框后，再试一次',
-      'hrd.not_matching_email': '请使用您的公司电子邮件登录。',
-      too_many_requests: '我们很抱歉。现在请求太多了。请刷新页面，然后再试一次。如果仍然存在，请稍后再试。'
+      'hrd.not_matching_email': '请使用您的公司电子邮件登录。'
     },
     passwordless: {
       'bad.email': '邮箱错误',
@@ -39,7 +42,8 @@ export default {
       password_no_user_info_error: '密码中出现账号信息。',
       password_strength_error: '密码过于简单。',
       user_exists: '该账号已存在。',
-      username_exists: '该用户名已存在。'
+      username_exists: '该用户名已存在。',
+      social_signup_needs_terms_acception: '请同意以下服务条款以继续。'
     }
   },
   success: {
@@ -49,6 +53,8 @@ export default {
     signUp: '感谢您的注册。'
   },
   blankErrorHint: '不能为空',
+  captchaCodeInputPlaceholder: 'Enter the code shown above',
+  captchaMathInputPlaceholder: 'Solve the formula shown above',
   codeInputPlaceholder: '您的代码',
   databaseEnterpriseLoginInstructions: '',
   databaseEnterpriseAlternativeLoginInstructions: '或',
@@ -58,6 +64,7 @@ export default {
   enterpriseLoginIntructions: '请用您的企业账号登录',
   enterpriseActiveLoginInstructions: '请输入您的企业账号 %s。',
   failedLabel: '失败!',
+  forgotPasswordTitle: '重置您的密码',
   forgotPasswordAction: '忘记您的密码？',
   forgotPasswordInstructions: '请输入您的邮箱，我们将为您发送重置密码的邮件。',
   forgotPasswordSubmitLabel: '发电子邮件',
@@ -71,7 +78,7 @@ export default {
   passwordInputPlaceholder: '您的密码',
   passwordStrength: {
     containsAtLeast: '至少包含 %d 个以上 %d 种字符:',
-    identicalChars: '不能多于 %d 个相同的字符在同一行(例如,不允许出现 "%s" )',
+    identicalChars: '不能多于 %d 个相同的字符在同一行（例如,不允许出现 "%s"）',
     nonEmpty: '密码不能为空',
     numbers: '数字 (如 0-9)',
     lengthAtLeast: '最少长度为 %d 个字符',
@@ -92,6 +99,8 @@ export default {
   resendingLabel: '重新发送中...',
   retryLabel: '重试',
   sentLabel: '发送!',
+  showPassword: '显示密码',
+  signUpTitle: '注册',
   signUpLabel: '注册',
   signUpSubmitLabel: '注册',
   signUpTerms: '注册即表示您同意我们的服务条款和隐私政策。',
@@ -112,8 +121,5 @@ export default {
   mfaLoginTitle: '两步验证',
   mfaLoginInstructions: '请输入您手机应用上显示的验证码。',
   mfaSubmitLabel: '登录',
-  mfaCodeErrorHint: '使用 %d 位数字',
-  forgotPasswordTitle: '重置您的密码',
-  signUpTitle: '注册',
-  showPassword: '显示密码'
+  mfaCodeErrorHint: '使用 %d 位数字'
 };
