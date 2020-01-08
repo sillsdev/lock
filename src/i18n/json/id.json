@@ -20,6 +20,7 @@
       "password_change_required": "Anda harus memperbarui kata sandi karena ini pertama kali Anda masuk log, atau karena kata sandi Anda kedaluwarsa.",
       "password_leaked": "Kami telah mendeteksi adanya masalah keamanan dengan akun ini. Untuk melindungi akun Anda, kami telah memblokir log ini. Email telah dikirimkan disertai instruksi untuk mengurungkan blokir akun Anda.",
       "too_many_attempts": "Akun Anda telah diblokir setelah mencoba masuk log berulang-ulang.",
+      "too_many_requests": "Kami minta maaf. Terlalu banyak permintaan saat ini. Mohon untuk jalankan ulang halaman dan coba lagi. Jika masih belum bisa, mohon coba lagi nanti.",
       "session_missing": "Tidak bisa menyelesaikan permintaan autentikasi Anda. Harap coba lagi setelah menutup semua dialog yang terbuka.",
       "hrd.not_matching_email": "Harap gunakan email perusahaan Anda untuk masuk log."
     },
@@ -35,7 +36,8 @@
       "password_no_user_info_error": "Kata sandi didasarkan pada informasi pengguna.",
       "password_strength_error": "Kata sandi terlalu lemah.",
       "user_exists": "Pengguna sudah ada.",
-      "username_exists": "Nama pengguna sudah ada."
+      "username_exists": "Nama pengguna sudah ada.",
+      "social_signup_needs_terms_acception": "Mohon setujui Persyaratan Layanan di bawah ini untuk melanjutkan."
     }
   },
   "success": {
@@ -45,6 +47,8 @@
     "signUp": "Terima kasih sudah mendaftar."
   },
   "blankErrorHint": "Wajib diisi",
+  "captchaCodeInputPlaceholder": "Masukkan kode yang ditampilkan diatas",
+  "captchaMathInputPlaceholder": "Selesaikan rumus yang ditunjukkan di atas",
   "codeInputPlaceholder": "kode Anda",
   "databaseEnterpriseLoginInstructions": "",
   "databaseEnterpriseAlternativeLoginInstructions": "atau",

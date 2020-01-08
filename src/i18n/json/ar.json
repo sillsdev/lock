@@ -36,7 +36,8 @@
       "password_no_user_info_error": "ترتكز كلمة المرور على اسم المستخدم.",
       "password_strength_error": "كلمة المرور ضعيفة جداً.",
       "user_exists": "المستخدم موجود بالفعل.",
-      "username_exists": "اسم المستخدم موجود بالفعل."
+      "username_exists": "اسم المستخدم موجود بالفعل.",
+      "social_signup_needs_terms_acception": "Please agree to the Terms of Service below to continue."
     }
   },
   "success": {
@@ -46,6 +47,8 @@
     "signUp": "شكراً لإنشاء الحساب."
   },
   "blankErrorHint": "لا ينبغي أن يكون فارغاً.",
+  "captchaCodeInputPlaceholder": "Enter the code shown above",
+  "captchaMathInputPlaceholder": "Solve the formula shown above",
   "codeInputPlaceholder": "الرمز",
   "databaseEnterpriseLoginInstructions": "",
   "databaseEnterpriseAlternativeLoginInstructions": "أو",
